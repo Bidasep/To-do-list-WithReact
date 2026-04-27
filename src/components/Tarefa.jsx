@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { memo, useState } from "react"
 import './Tarefa.css'
 
 function Tarefa({ texto }) {
@@ -15,4 +15,4 @@ function Tarefa({ texto }) {
     )
 
 }
-export default Tarefa
+export default  memo(Tarefa) 
